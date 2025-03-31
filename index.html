@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSMQ</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <form>
+                <label for="schools">Enter Schools</label>
+                <input 
+                    type="text" 
+                    name="schools"
+                    id="schools"
+                    class="schools" 
+                    placeholder="Names of Schools" 
+                    minlength="2"
+                    maxlength="50"
+                    pattern="[\w\s.'',']+"
+                    required
+                />
+                <button class="btn schoolsBtn" type="submit">Submit School</button>
+            </form>
+            <div class="display"></div>
+            <div class="clearBoardContainer">
+                <button class="clearboard btn">Clear Schools</button>
+            </div> 
+            <div class="schoolDisplayBoard">
+                <button class="doneWithSchoolChoice">Click If Done With School Selection</button>
+            </div>
+        </section>
+        <section>
+            <div class="ballotPage">
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
