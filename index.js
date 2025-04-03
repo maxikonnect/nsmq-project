@@ -38,7 +38,9 @@ function displayOnBoard() {
 }
 
 
-
+/* LINK TO THE NEXT PAGE, THE BALLOT PAGE IT IS DISABLED
+   UNTIL USER SELECTS MORE THAN ONE SCHOOL
+*/
 function updateDoneWithSelection() {
     doneWithSchoolChoice.disabled = contain.length < 2;
 }
@@ -84,6 +86,15 @@ function displayToBallot() {
         backToSchoolSelection();
     })
     ballotPage.appendChild(backToSchool);
+
+    const startQuiz = document.createElement("button");
+    startQuiz.classList.add("startquiz");
+    startQuiz.textContent = "Start Quiz";
+    startQuiz.addEventListener("click", function(){
+        window.location.href="quizPage.html";
+    })
+    ballotPage.appendChild(startQuiz);
+
 }
 
 
@@ -91,7 +102,7 @@ function displayToBallot() {
 
 doneWithSchoolChoice.addEventListener("click", function () {
     display.innerHTML = "";
-    clearBoardContainer.innerHTML = "";
+    clearBoardContainer.style.display = "none";
     schoolInputForm.style.display = "none"; // Hide instead of remove
     doneWithSchoolChoice.style.display = "none"; 
 
@@ -210,6 +221,7 @@ displayOnBoard();
 updateDoneWithSelection();
 
 
+/* THIS REDIRECTS THE USER BACK TO SELECTION PAGE */
 function backToSchoolSelection(){
     displayOnBoard();
     displayToBallot.innerHTML = "";

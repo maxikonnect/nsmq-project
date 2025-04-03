@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="twoSchoolsContainer">
+            <table class="d">
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <td>Subjects</td>
+                        <td colspan="2"><input type="text"  class="round1 invisible" min="2" max="50"></td>
+                        <td colspan="2"><input type="text"  class="round1 invisible" min="2" max="50"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                    <tr>
+                        <td colspan="3"><strong>GENERAL QUESTIONS - ROUND 1</strong></td>
+                        <td colspan="2"><button id="toggleRound1">Toggle Round 1</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>POINTS</td>
+                        <td>BONUS</td>
+                        <td>POINTS</td>
+                        <td>BONUS</td>
+                    </tr>
+                </tbody>
+
+                <tbody class="round1-container">
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round1 invisible" value="Mathematics" min="2" max="50"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round1 invisible" value="Physics" min="2" max="50"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Biology" class="round1 invisible" min="2" max="50"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Chemistry" class="round1 invisible" min="2" max="50"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team1"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                        <td><input type="number"  class="round1 invisible team2"></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td><strong>ROUND 1 TOTAL</strong></td>
+                        <td colspan="2"><input type="number" value="0" class="round1 invisible team1round1Total"></td>
+                        <td colspan="2"><input type="number" value="0" class="round1 invisible team2round1Total"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td rowspan="4" colspan="3"><strong>SPEED RACE - ROUND 2</strong></td>
+                        <td rowspan="4" colspan="2"><button id="toggleRound2">Toggle Round 2</button></td>
+                    </tr>
+                </tbody>
+                <tbody class="round2-container">
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round2 invisible" value="Mathematics" min="2" max="50"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round2 invisible" value="Physics" min="2" max="50"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Biology" class="round2 invisible" min="2" max="50"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Chemistry" class="round2 invisible" min="2" max="50"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team1"></td>
+                        <td  colspan="2"><input type="number"  class="round2 invisible team2"></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td><strong>ROUND 2 TOTAL</strong></td>
+                        <td colspan="2"><input value="0" type="number" class="round2 invisible team1round2Total"></td>
+                        <td colspan="2"><input value="0" type="number" class="round2 invisible team2round2Total"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="3"><strong>TRUE OR FALSE- ROUND 3</strong></td>
+                        <td colspan="2"><button id="toggleRound3">Toggle Round 3</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>POINTS</td>
+                        <td>BONUS</td>
+                        <td>POINTS</td>
+                        <td>BONUS</td>
+                    </tr>
+                </tbody>
+                
+                <tbody class="round3-container">
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round3 invisible" value="Mathematics" min="2" max="50"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" class="round3 invisible" value="Physics" min="2" max="50"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Biology" class="round3 invisible" min="2" max="50"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="text" value="Chemistry" class="round3 invisible" min="2" max="50"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team1"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                        <td><input type="number" value="0" class="round3 invisible team2"></td>
+                    </tr>
+                </tbody>
+                
+                <tbody>
+                    <tr>
+                        <td><strong>ROUND 3 TOTAL</strong></td>
+                        <td colspan="2"><input type="number" value="0" class="round3 invisible team1round3Total"></td>
+                        <td colspan="2"><input type="number" value="0" class="round3 invisible team2round3Total"></td>
+                    </tr>
+                </tbody>
+                
+                <tbody>
+                    <tr>
+                        <td colspan="3"><strong>RIDDLE - ROUND 4</strong></td>
+                        <td colspan="2"><button id="toggleRound4">Toggle Round 4</button></td>
+                    </tr>
+                </tbody>
+                <tbody class="round4-container"> <!-- Added the missing class -->
+                    <tr>
+                        <td ><input type="text" value="Mathematics" class="round4 invisible" min="2" max="50"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team1"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="Physics" class="round4 invisible" min="2" max="50"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team1"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="Chemistry" class="round4 invisible" min="2" max="50"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team1"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="Biology" class="round4 invisible" min="2" max="50"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team1"></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team2"></td>
+                    </tr>
+                </tbody>
+                
+                <tbody>
+                    <tr>
+                        <td><strong>ROUND 4 TOTAL</strong></td>
+                        <td colspan="2"><input type="number" class="round4 invisible team1round4Total"></td> <!-- Changed text input to number -->
+                        <td colspan="2"><input type="number" class="round4 invisible team2round4Total"></td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <td><strong>OVERALL TOTAL</strong></td>
+                        <td colspan="2"><input type="number" value="0" class="overall invisible overAllTotalTeam1" min="2" max="50"></td>
+                        <td colspan="2"><input type="number" value="0" class="overall invisible overAllTotalTeam2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </main>
+    
+    <footer></footer>
+    <script src="indexTwo.js"></script>
+    
+</body>
+</html>
